@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -50,6 +51,10 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     // Google Map Compose
     implementation(libs.android.google.map.compose)
+    // Hilt
+    implementation(libs.dagger.android)
+    ksp(libs.dagger.compiler)
+    ksp(libs.hilt.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
