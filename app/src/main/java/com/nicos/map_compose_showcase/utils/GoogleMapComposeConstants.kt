@@ -1,4 +1,4 @@
-package com.nicos.map_compose_showcase.map_compose
+package com.nicos.map_compose_showcase.utils
 
 import com.google.android.gms.maps.model.LatLng
 

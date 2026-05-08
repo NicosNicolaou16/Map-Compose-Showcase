@@ -18,7 +18,7 @@ import androidx.lifecycle.viewModelScope
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.nicos.map_compose_showcase.R
-import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.ROUTE_POINTS
+import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.ROUTE_POINTS
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers

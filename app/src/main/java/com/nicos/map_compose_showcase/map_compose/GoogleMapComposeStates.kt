@@ -2,8 +2,8 @@ package com.nicos.map_compose_showcase.map_compose
 
 import com.google.android.gms.maps.model.BitmapDescriptor
 import com.google.android.gms.maps.model.LatLng
-import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.INITIAL_LATITUDE
-import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.INITIAL_LONGITUDE
+import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.INITIAL_LATITUDE
+import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.INITIAL_LONGITUDE
 
 data class GoogleMapComposeStates(
     val loading: Boolean = false,
