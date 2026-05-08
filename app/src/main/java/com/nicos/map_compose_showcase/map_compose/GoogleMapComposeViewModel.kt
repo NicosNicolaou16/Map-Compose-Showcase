@@ -18,7 +18,7 @@ import androidx.lifecycle.viewModelScope
 import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.nicos.map_compose_showcase.R
-import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.routePoints
+import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.ROUTE_POINTS
 import dagger.hilt.android.lifecycle.HiltViewModel
 import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.Dispatchers
@@ -184,7 +184,7 @@ class GoogleMapComposeViewModel @Inject constructor(
     private fun polylines() {
         viewModelScope.launch(Dispatchers.IO) {
             val latLng = mutableListOf<LatLng>()
-            routePoints.forEachIndexed { index, rootPoint ->
+            ROUTE_POINTS.forEachIndexed { index, rootPoint ->
                 if (index == 0) {
                     viewModelScope.launch(Dispatchers.Main) {
                         state = state.copy(

@@ -58,8 +58,8 @@ import com.google.maps.android.compose.rememberCameraPositionState
 import com.google.maps.android.ktx.BuildConfig
 import com.nick.samplecomposeandhilt.utils.ObserveAsEvents.ObserveAsEvents
 import com.nicos.map_compose_showcase.R
-import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.animationZoomIn
-import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.zoomLevel
+import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.ANIMATION_ZOOM_IN
+import com.nicos.map_compose_showcase.map_compose.GoogleMapComposeConstants.ZOOM_LEVEL
 import kotlinx.coroutines.launch
 
 @Composable
@@ -79,7 +79,7 @@ fun GoogleMapComposeView(
     val scope = rememberCoroutineScope()
     val position: LatLng = state.latLng
     val cameraPositionState = rememberCameraPositionState {
-        this.position = CameraPosition.fromLatLngZoom(position, zoomLevel)
+        this.position = CameraPosition.fromLatLngZoom(position, ZOOM_LEVEL)
     }
     val markerState = remember { MarkerState(position = position) }
     val mapLoaded = remember { mutableStateOf(false) }
@@ -112,8 +112,8 @@ fun GoogleMapComposeView(
             is GoogleMapComposeEvents.CameraZoomIn -> {
                 scope.launch {
                     cameraPositionState.animate(
-                        update = CameraUpdateFactory.newLatLngZoom(event.latLng, zoomLevel),
-                        durationMs = animationZoomIn
+                        update = CameraUpdateFactory.newLatLngZoom(event.latLng, ZOOM_LEVEL),
+                        durationMs = ANIMATION_ZOOM_IN
                     )
                 }
             }

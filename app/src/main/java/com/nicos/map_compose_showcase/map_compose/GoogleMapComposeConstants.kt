@@ -4,12 +4,12 @@ import com.google.android.gms.maps.model.LatLng
 
 object GoogleMapComposeConstants {
 
-    const val initialLatitude = 35.1848
-    const val initialLongitude = 33.3818
-    internal const val zoomLevel = 11f
-    internal const val animationZoomIn = 1000
+    const val INITIAL_LATITUDE = 35.1848
+    const val INITIAL_LONGITUDE = 33.3818
+    internal const val ZOOM_LEVEL = 11f
+    internal const val ANIMATION_ZOOM_IN = 1000
 
-    internal val routePoints =
+    internal val ROUTE_POINTS =
         listOf(
             LatLng(35.1856, 33.3823),
             LatLng(35.1750, 33.3750),
