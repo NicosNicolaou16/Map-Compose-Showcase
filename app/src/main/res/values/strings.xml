@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Map-Compose-Showcase</string>
+    <string name="search_country_town_village_etc">Search country, town, village etc.</string>
+    <string name="polylines">Polylines</string>
 </resources>

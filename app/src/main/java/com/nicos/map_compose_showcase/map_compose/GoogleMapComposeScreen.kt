@@ -57,6 +57,7 @@ import com.google.maps.android.compose.Polyline
 import com.google.maps.android.compose.rememberCameraPositionState
 import com.google.maps.android.ktx.BuildConfig
 import com.nick.samplecomposeandhilt.utils.ObserveAsEvents.ObserveAsEvents
+import com.nicos.map_compose_showcase.R
 import kotlinx.coroutines.launch
 
 @Composable
