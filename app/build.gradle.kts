@@ -60,6 +60,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.compose.runtime.livedata)
+    implementation(libs.androidx.hilt.navigation.compose)
     // Google Map Compose
     implementation(libs.android.google.map.compose)
     // Hilt
