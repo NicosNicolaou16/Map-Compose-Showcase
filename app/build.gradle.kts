@@ -33,6 +33,7 @@ android {
         manifestPlaceholders["MAPS_API_KEY"] = mapsKey
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testProguardFiles("proguard-rules.pro")
     }
 
     buildTypes {
