@@ -56,12 +56,12 @@ import com.google.maps.android.compose.MapsComposeExperimentalApi
 import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.Polyline
 import com.google.maps.android.compose.rememberCameraPositionState
-import com.google.maps.android.ktx.BuildConfig
 import com.nick.samplecomposeandhilt.utils.ObserveAsEvents.ObserveAsEvents
 import com.nicos.map_compose_showcase.R
-import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.ANIMATION_ZOOM_IN
-import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.ZOOM_LEVEL
+import com.nicos.map_compose_showcase.utils.constants.GoogleMapComposeConstants.ANIMATION_ZOOM_IN
+import com.nicos.map_compose_showcase.utils.constants.GoogleMapComposeConstants.ZOOM_LEVEL
 import kotlinx.coroutines.launch
+import com.nicos.map_compose_showcase.BuildConfig
 
 @Composable
 fun GoogleMapComposeRoot() {
@@ -175,13 +175,6 @@ fun GoogleMapComposeView(
         }
         val textFieldState = rememberTextFieldState()
         val keyboardController = LocalSoftwareKeyboardController.current
-        //https://developer.android.com/develop/ui/compose/text/migrate-state-based#conforming-approach
-        //Real time update
-        /*LaunchedEffect(textFieldState) {
-            snapshotFlow { textFieldState.text.toString() }.collectLatest {
-                viewModel.updateLocationByLocationName(it)
-            }
-        }*/
 
         OutlinedTextField(
             modifier = Modifier
