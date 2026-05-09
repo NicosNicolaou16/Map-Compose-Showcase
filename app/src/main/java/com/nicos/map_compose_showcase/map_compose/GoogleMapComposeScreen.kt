@@ -58,8 +58,8 @@ import com.google.maps.android.compose.Polyline
 import com.google.maps.android.compose.rememberCameraPositionState
 import com.nick.samplecomposeandhilt.utils.ObserveAsEvents.ObserveAsEvents
 import com.nicos.map_compose_showcase.R
-import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.ANIMATION_ZOOM_IN
-import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.ZOOM_LEVEL
+import com.nicos.map_compose_showcase.utils.constants.GoogleMapComposeConstants.ANIMATION_ZOOM_IN
+import com.nicos.map_compose_showcase.utils.constants.GoogleMapComposeConstants.ZOOM_LEVEL
 import kotlinx.coroutines.launch
 import com.nicos.map_compose_showcase.BuildConfig
 
