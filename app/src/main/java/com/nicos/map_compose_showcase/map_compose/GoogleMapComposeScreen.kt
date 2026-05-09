@@ -56,12 +56,12 @@ import com.google.maps.android.compose.MapsComposeExperimentalApi
 import com.google.maps.android.compose.MarkerState
 import com.google.maps.android.compose.Polyline
 import com.google.maps.android.compose.rememberCameraPositionState
-import com.google.maps.android.ktx.BuildConfig
 import com.nick.samplecomposeandhilt.utils.ObserveAsEvents.ObserveAsEvents
 import com.nicos.map_compose_showcase.R
 import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.ANIMATION_ZOOM_IN
 import com.nicos.map_compose_showcase.utils.GoogleMapComposeConstants.ZOOM_LEVEL
 import kotlinx.coroutines.launch
+import com.nicos.map_compose_showcase.BuildConfig
 
 @Composable
 fun GoogleMapComposeRoot() {
