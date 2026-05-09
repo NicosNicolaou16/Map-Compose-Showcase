@@ -83,7 +83,6 @@ This project is built with **[Kotlin](https://kotlinlang.org/docs/getting-starte
 - **Dependency Injection:** [Hilt](https://dagger.dev/hilt/)
 - **Build & Optimization:** [KSP](https://developer.android.com/build/migrate-to-ksp), [Version Catalogs](https://developer.android.com/build/migrate-to-catalogs)
 
-
 ## 🔧 Versioning
 
 - **Target SDK:** **36**
