@@ -175,13 +175,6 @@ fun GoogleMapComposeView(
         }
         val textFieldState = rememberTextFieldState()
         val keyboardController = LocalSoftwareKeyboardController.current
-        //https://developer.android.com/develop/ui/compose/text/migrate-state-based#conforming-approach
-        //Real time update
-        /*LaunchedEffect(textFieldState) {
-            snapshotFlow { textFieldState.text.toString() }.collectLatest {
-                viewModel.updateLocationByLocationName(it)
-            }
-        }*/
 
         OutlinedTextField(
             modifier = Modifier
