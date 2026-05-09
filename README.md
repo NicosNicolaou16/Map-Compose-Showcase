@@ -35,6 +35,34 @@ To get this project running locally, you'll need to set up your Google Maps API 
     MAPS_API_KEY=YOUR_API_KEY_HERE
     ```
 
+### ⚙️ Gradle & Manifest Configuration
+
+The project is configured to automatically read the API key and inject it into the Android Manifest.
+
+1.  **Read API Key in `app/build.gradle.kts`**:
+    ```kotlin
+    val localProperties = Properties()
+    val localPropertiesFile = rootProject.file("local.properties")
+    if (localPropertiesFile.exists()) {
+        localProperties.load(localPropertiesFile.inputStream())
+    }
+    val mapsKey = localProperties.getProperty("MAPS_API_KEY") ?: ""
+
+    android {
+        defaultConfig {
+            // ...
+            manifestPlaceholders["MAPS_API_KEY"] = mapsKey
+        }
+    }
+    ```
+
+2.  **Inject into `AndroidManifest.xml`**:
+    ```xml
+    <meta-data
+        android:name="com.google.android.geo.API_KEY"
+        android:value="${MAPS_API_KEY}" />
+    ```
+
 ## 📸 Screenshots & Demos
 
 <p align="left">
