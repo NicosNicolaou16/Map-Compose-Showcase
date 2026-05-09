@@ -23,6 +23,18 @@ A modern Android application showcasing the integration of **Google Maps** with 
 * **State Management:** Implements **UDF** with dedicated **States**, **Actions**, and **Events** for predictable UI behavior and side-effect handling.
 * **Modern UI:** Built entirely with **Jetpack Compose** and **Material 3**.
 
+## 🚀 Getting Started
+
+To get this project running locally, you'll need to set up your Google Maps API Key:
+
+1.  Obtain an API key from the [Google Cloud Console](https://console.cloud.google.com/).
+2.  Enable the **Maps SDK for Android**.
+3.  In your project's root directory, create (or open) the `local.properties` file.
+4.  Add your API key as follows:
+    ```properties
+    MAPS_API_KEY=YOUR_API_KEY_HERE
+    ```
+
 ## 📸 Screenshots & Demos
 
 <p align="left">
