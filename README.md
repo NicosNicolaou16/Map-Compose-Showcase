@@ -26,9 +26,10 @@ A modern Android application showcasing the integration of **Google Maps** with 
 ## 📸 Screenshots & Demos
 
 <p align="left">
-  <img src="docs/screenshots/map_main.png" alt="Map Main Screen" height="500" width="230">
-  <img src="docs/screenshots/map_search.png" alt="Map Search" height="500" width="230">
-  <img src="docs/screenshots/map_polyline.gif" alt="Polyline Animation" height="500" width="230">
+  <img src="examples/map.png" alt="Map Main Screen" height="500" width="230">
+  <img src="examples/example_gif1.gif" alt="Map Search" height="500" width="230">
+  <img src="examples/example_gif2.gif" alt="Polyline Animation" height="500" width="230">
+  <img src="examples/example_gif3.gif" alt="Polyline Animation" height="500" width="230">
 </p>
 
 ## 🛠️ Tech Stack & Libraries
