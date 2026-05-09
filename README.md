@@ -50,7 +50,7 @@ This project is built with **[Kotlin](https://kotlinlang.org/docs/getting-starte
 - **Kotlin Version:** **2.3.21**
 - **Gradle Version:** **9.2.1**
 
-## 📚 APIs & References
+## 📚 References
 
 ### Data Sources & Tools
 
