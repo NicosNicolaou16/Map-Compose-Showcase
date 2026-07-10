@@ -85,9 +85,9 @@ This project is built with **[Kotlin](https://kotlinlang.org/docs/getting-starte
 
 ## 🔧 Versioning
 
-- **Target SDK:** **36**
+- **Target SDK:** **37**
 - **Minimum SDK:** **28**
-- **Kotlin Version:** **2.3.21**
+- **Kotlin Version:** **2.4.0**
 - **Gradle Version:** **9.2.1**
 
 ## 📚 References
