@@ -26,7 +26,7 @@ android {
     defaultConfig {
         applicationId = "com.nicos.map_compose_showcase"
         minSdk = 28
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
