@@ -18,15 +18,13 @@ val mapsKey = localProperties.getProperty("MAPS_API_KEY") ?: ""
 android {
     namespace = "com.nicos.map_compose_showcase"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+        version = release(37)
     }
 
     defaultConfig {
         applicationId = "com.nicos.map_compose_showcase"
         minSdk = 28
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -62,11 +60,12 @@ android {
         compose = true
         buildConfig = true
     }
+    buildToolsVersion = "37.0.0"
 }
 
 kotlin {
     compilerOptions {
-        languageVersion = org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_3
+        languageVersion = org.jetbrains.kotlin.gradle.dsl.KotlinVersion.KOTLIN_2_4
         jvmTarget = JvmTarget.fromTarget("21")
         freeCompilerArgs = listOf("-XXLanguage:+PropertyParamAnnotationDefaultTargetMode")
     }
