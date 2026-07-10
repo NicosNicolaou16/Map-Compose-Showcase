@@ -14,7 +14,7 @@ kspVersion = "2.3.10"
 composeVersion = "1.11.4"
 material3Version = "1.5.0-alpha23"
 hiltNavigationCompose = "1.4.0"
-googleMapComposeVersion = "8.3.0"
+googleMapComposeVersion = "8.3.1"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
