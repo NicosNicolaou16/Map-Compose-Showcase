@@ -17,6 +17,7 @@ val mapsKey = localProperties.getProperty("MAPS_API_KEY") ?: ""
 
 android {
     namespace = "com.nicos.map_compose_showcase"
+    buildToolsVersion = "37.0.0"
     compileSdk {
         version = release(37)
     }
@@ -60,7 +61,6 @@ android {
         compose = true
         buildConfig = true
     }
-    buildToolsVersion = "37.0.0"
 }
 
 kotlin {
