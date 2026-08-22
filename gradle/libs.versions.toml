@@ -1,5 +1,5 @@
 [versions]
-agp = "9.3.0"
+agp = "9.3.1"
 coreKtx = "1.19.0"
 junit = "4.13.2"
 junitVersion = "1.3.0"
@@ -7,14 +7,14 @@ espressoCore = "3.7.0"
 lifecycleRuntimeKtx = "2.11.0"
 activityCompose = "1.13.0"
 kotlin = "2.4.10"
-composeBom = "2026.06.01"
+composeBom = "2026.08.00"
 hiltVersion = "2.60.1"
 hiltCompilerVersion = "1.4.0"
 kspVersion = "2.3.10"
-composeVersion = "1.11.4"
-material3Version = "1.5.0-alpha24"
+composeVersion = "1.12.0"
+material3Version = "1.5.0-alpha26"
 hiltNavigationCompose = "1.4.0"
-googleMapComposeVersion = "8.4.0"
+googleMapComposeVersion = "8.5.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
