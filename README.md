@@ -88,8 +88,8 @@ This project is built with **[Kotlin](https://kotlinlang.org/docs/getting-starte
 - **Google Maps Version:** **8.5.0**
 - **Target SDK:** **37**
 - **Minimum SDK:** **28**
-- **Kotlin Version:** **2.4.10**
-- **Gradle Version:** **9.3.1**
+- **Kotlin Version:** **2.4.20**
+- **Gradle Version:** **9.4.1**
 
 ## 📚 References
 
